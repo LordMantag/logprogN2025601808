@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PIZZERIA"/>
+        <attribute name="authors" value="ferna"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-04 05:33:17 a. m."/>
+        <attribute name="created" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDQtMDM7MDc6NTI6MDMgcC4gbS47MzA0MA=="/>
+        <attribute name="edited" value="ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDQtMDM7MDg6MDg6NDUgcC4gbS47MTszMTU2"/>
+        <attribute name="edited" value="bWFudGE7REVTS1RPUC1TQ0tIN05FOzIwMjUtMDQtMDQ7MDU6MzM6MTcgYS4gbS47MTszMTcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pizza, veget, noveg" type="Integer" array="False" size=""/>
+            <output expression="&quot;OPCION 1: PIZZA VEGETARIANA, OPCION 2: PIZZA TRADICIONAL&quot;" newline="True"/>
+            <input variable="pizza"/>
+            <if expression="pizza =1">
+                <then>
+                    <output expression="&quot;INGREDIENTE: PIMIENTO O TOFU&quot;" newline="True"/>
+                    <output expression="&quot;PIMIENTO 1 O TOFU 2&quot;" newline="True"/>
+                    <input variable="veget"/>
+                    <if expression="veget ==1">
+                        <then>
+                            <output expression="&quot;PIZZA VEGETARIANA CON MOZZARELLA, TOAMTE Y PIMIENTO&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;PIZZA VEGETARIANA CON MOZZARELLA, TOMATE Y TOFU&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;INGREDIENTE: PEPERONI, JAMON O SALMON&quot;" newline="True"/>
+                    <output expression="&quot;PEPERONI 1, JAMON 2 O SALMON 3&quot;" newline="True"/>
+                    <input variable="noveg"/>
+                    <if expression="noveg=1">
+                        <then>
+                            <output expression="&quot;PIZZA TRADICIONAL CON MOZZARELLA, TOMATE Y PEPPERONI&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="noveg=2">
+                                <then>
+                                    <output expression="&quot;PIZZA TRADICIONAL CON MOZZARELLA, TOMATE Y JAMON&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="noveg=3">
+                                        <then>
+                                            <output expression="&quot;PIZZA TRADICIONAL CON MOZZARELLA, TOMATE Y SALMON&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;OPCION NO VALIDA&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
