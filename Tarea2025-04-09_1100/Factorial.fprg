@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial"/>
+        <attribute name="authors" value="manta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-05 03:37:27 p. m."/>
+        <attribute name="created" value="bWFudGE7REVTS1RPUC1TQ0tIN05FOzIwMjUtMDQtMDU7MDI6NTA6MjkgcC4gbS47MzA3OQ=="/>
+        <attribute name="edited" value="bWFudGE7REVTS1RPUC1TQ0tIN05FOzIwMjUtMDQtMDU7MDM6Mzc6MjcgcC4gbS47MTszMTkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Numero, Factorial, I" type="Integer" array="False" size=""/>
+            <assign variable="I" expression="1"/>
+            <assign variable="Factorial" expression="1"/>
+            <output expression="&quot;Ingrese un numero entero&quot;" newline="True"/>
+            <input variable="Numero"/>
+            <while expression="I&lt;=Numero">
+                <assign variable="Factorial" expression="Factorial*I"/>
+                <assign variable="I" expression="I+1"/>
+            </while>
+            <output expression="Factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

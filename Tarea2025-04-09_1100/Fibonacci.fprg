@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Fibonacci"/>
+        <attribute name="authors" value="manta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-05 04:02:27 p. m."/>
+        <attribute name="created" value="bWFudGE7REVTS1RPUC1TQ0tIN05FOzIwMjUtMDQtMDU7MDM6Mzc6MzQgcC4gbS47MzA4MQ=="/>
+        <attribute name="edited" value="bWFudGE7REVTS1RPUC1TQ0tIN05FOzIwMjUtMDQtMDU7MDQ6MDI6MjcgcC4gbS47MTszMTg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N1, N2, I, M" type="Integer" array="False" size=""/>
+            <assign variable="N1" expression="1"/>
+            <assign variable="N2" expression="2"/>
+            <assign variable="I" expression="1"/>
+            <output expression="N1" newline="True"/>
+            <output expression="N2" newline="True"/>
+            <while expression="I&lt;=62">
+                <assign variable="M" expression="N1+N2"/>
+                <output expression="M" newline="True"/>
+                <assign variable="N1" expression="N2"/>
+                <assign variable="N2" expression="M"/>
+                <assign variable="I" expression="I+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
